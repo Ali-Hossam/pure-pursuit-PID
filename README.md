@@ -24,18 +24,24 @@ To run the notebook, you need the following dependencies:
 ## Usage
 1. Import the required modules and classes from the repository into your own project:
 
-```from pure_pursuit import pure_pursuit_PID
-from generate_path import Path```
+```python
+from pure_pursuit import pure_pursuit_PID
+from generate_path import Path
+```
 
 
 3. Set up the desired path for the vehicle to follow, or generate it using generate_path function
-```path = Path()
-generated_path = path.generate_path().copy()```
+```python
+path = Path()
+generated_path = path.generate_path().copy()
+```
 
 4. Call pure_pursuit_PID function to calculate velocity and theta at each point.
-```final_data = pure_pursuit_PID(generated_path)```
+```python
+final_data = pure_pursuit_PID(generated_path)
+```
 
-5. Plot orginal path and vehicle trajectory using plot_path function.
+6. Plot orginal path and vehicle trajectory using plot_path function.
 ```path.plot_path(final_data)```
 
-6. Optionally, you can adjust look ahead distance, and other parameters by passing them to pure_pursuit_PID function.
+7. Optionally, you can adjust look ahead distance, and other parameters by passing them to pure_pursuit_PID function.
