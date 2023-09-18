@@ -42,6 +42,8 @@ final_data = pure_pursuit_PID(generated_path)
 ```
 
 6. Plot orginal path and vehicle trajectory using plot_path function.
-```path.plot_path(final_data)```
+```python
+path.plot_path(final_data)
+```
 
-7. Optionally, you can adjust look ahead distance, and other parameters by passing them to pure_pursuit_PID function.
+8. Optionally, you can adjust look ahead distance, and other parameters by passing them to pure_pursuit_PID function.
