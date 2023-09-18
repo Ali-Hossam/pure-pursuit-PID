@@ -5,7 +5,7 @@ This repository contains a Python implementation of the Pure Pursuit algorithm c
 The Pure Pursuit algorithm works by finding the target point on the desired path that is a fixed look-ahead distance away from the vehicle. The steering angle is then calculated based on this target point and the vehicle's current position. The PID control component provides control over the speed of the vehicle by adjusting the throttling commands based on the error between the current and desired velocity.
 
 <p align="center">
-    <img width="400" src="github_gif/pid.gif">
+    <img width="400" src="github_gif/piid.gif">
 </p>
 
 ## Features
